@@ -20,7 +20,7 @@ public class PersonService {
 	
 	//Method 2
 	public boolean login(PersonEntity person) {
-		PersonEntity dbPerson = personReposetory.findByUserNameAndPassword(person.getUserName(), person.getPassword());
+		PersonEntity dbPerson = personReposetory.findByUsernameAndPassword(person.getUsername(), person.getPassword());
 		boolean loginStatus = dbPerson != null ? true : false;
 		return loginStatus;
 	}
