@@ -8,5 +8,6 @@ import com.akash.app1.entity.PersonEntity;
 @Repository
 public interface PersonReposetory extends CrudRepository<PersonEntity, Integer> {
 	public PersonEntity findByUsernameAndPassword(String username, String password);
+	public PersonEntity findByUsername(String username);
 }
 
